@@ -1,9 +1,11 @@
+import { Button } from "@mui/material";
+
 function CreditOptions({ currencySymbol, productPrice, creditStatus }) {
   return <div>
     <h4>Credit Options</h4>
     <p>Product Price {currencySymbol}{productPrice}</p>
     <p>Credit Status {creditStatus}</p>
-    <button>View more</button>
+    <Button>View more</Button>
   </div>
 }
 
