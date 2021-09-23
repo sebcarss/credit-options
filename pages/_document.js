@@ -1,4 +1,6 @@
-import Document, { Main } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+
+const isLocal = process.env.ENV === 'development';
 
 class MyDocument extends Document {
   // static async getInitialProps(ctx) {
@@ -7,9 +9,18 @@ class MyDocument extends Document {
   // }
 
   render() {
-    return (
+
+    return isLocal ? (
+      <Html>
+        <Head />
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    ) : (
       <Main />
-    )
+    );
   }
 }
 
