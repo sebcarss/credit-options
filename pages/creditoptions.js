@@ -5,7 +5,7 @@ function CreditOptions({ currencySymbol, productPrice, creditStatus }) {
     <h4>Credit Options</h4>
     <p>Product Price {currencySymbol}{productPrice}</p>
     <p>Credit Status {creditStatus}</p>
-    <Button>View more</Button>
+    <Button>All &nbsp;<strong>Very Pay</strong>&nbsp; payment options</Button>
   </div>
 }
 
