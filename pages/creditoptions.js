@@ -8,6 +8,7 @@ const ContentSection = styled.div`
 `;
 
 function CreditOptions({ currencySymbol, productPrice, creditStatus }) {
+
   return <Container />
   // return <div>
   //   <h4>Credit Options</h4>
